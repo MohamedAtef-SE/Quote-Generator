@@ -75,4 +75,5 @@ function quoteGenerator() {
     }
 
     document.getElementById('quotes').innerHTML = quote;
+    document.getElementById('mainAudio').play();
 }

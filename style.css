@@ -36,12 +36,14 @@ button:hover {
 }
 
 .text {
+    margin: auto;
     margin-top: 20px;
     height: 120px;
     font-size: 20px;
     text-align: center;
     font-weight: 800;
     font-style: italic;
+    width: 50%;
 }
 
 .bold {
@@ -54,42 +56,42 @@ button:hover {
 
 }
 
-.width-50 {
-    width: 50%;
-}
 
 .quoteDay {
-    background-image: url(./background.avif);
+    background-image: url(./background.jpg);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     margin: auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .quoteDay .innerSection {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: auto;
-    height: 100vh;
 }
 
 @media (max-width: 992px) {
     h1 {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .quoteDay {
-        transform: rotate(90deg);
-        width: 100vh;
-    }
-
-    .innerSection {
-        transform: rotate(-90deg);
+        background-image: url(./background\ -\ responsive.jpg);
     }
 
     .text {
         font-size: 16px;
+        height: 100px;
+        width: 75%;
+    }
+
+    .bold {
+        margin: 10px;
     }
 }
